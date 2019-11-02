@@ -13,13 +13,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 m-auto">
-				<h1 class="my-4">Lets upload some shit</h1>
+				<h1 class="my-4">Lets upload some stuff</h1>
 				<form action="/upload" method="post" enctype="multipart/form-data">
 					<div class="custom-file mb-3">
-						<input type="file" name="file" id="file" class="custom-file-input">
-						<label for="file" class="custom-file-label">
-							Choose Stuff
-						</label>
+						<input type="file" class="custom-file-input" name="file" id="file1" onchange="readSingleFile(this.files)">
+						<label class="custom-file-label" for="file1" id="file-label">Choose file</label>
 					</div>
 					<input type="submit" value="Submit" class="btn btn-primary btn-block">
 				</form>
@@ -29,7 +27,7 @@
 				<div class="card mb-3">
 					<div class="card-header">
 						<div class="card-title">
-								<%= file._id %>
+								<%= file.filename %>
 						</div>
 					</div>
 					<div class="card-body">
@@ -53,9 +51,15 @@
 		</div>
 	</div>
 
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		function readSingleFile(e) {
+			const name = e[0].name;
+			document.getElementById("file-label").textContent = name;
+		}
+	</script>
 </body>
 
 </html>
