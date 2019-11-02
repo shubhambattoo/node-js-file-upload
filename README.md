@@ -1,11 +1,41 @@
-# nodejs gridfs upload
+# NodeJS GridFS Upload
 
-## using new gridfs bucket
+## Using new gridfs bucket
 
-Methods working
+About GridFS [read more](https://docs.mongodb.com/manual/core/gridfs/)
+
+To read more about the GridFS bucket [read more](https://mongodb.github.io/node-mongodb-native/3.2/api/GridFSBucket.html)
+
+## Methods working
 <ul>
 <li>Able to upload files</li>
 <li>Able to retrive files</li>
+<li>Able to Delete files and chunks from the db</li>
 </ul>
 
-(note : delete is not yet functional yet)
+## Author
+
+👤 **Shubham Battoo**
+
+* Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
+* Github: [@shubhambattoo](https://github.com/shubhambattoo)
+
+## Usage
+
+Download or Clone the project, ``` cd node-js-file-upload ```
+
+then install all the required dev and depenedencies by running
+
+```
+npm install
+```
+
+Serve the project
+
+```
+npm start
+```
+
+Server starts on the port 5001
+
+Give a ⭐️ if this project helped you!
