@@ -12,7 +12,7 @@
   "author": "shubhambattoo",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.7.1",
+    "ejs": "^2.7.2",
     "express": "^4.17.1",
     "gridfs-stream": "^1.1.1",
     "method-override": "^3.0.0",
