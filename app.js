@@ -55,6 +55,11 @@ const upload = multer({
 
 // get / page
 app.get("/", (req, res) => {
+  if(!gfs) {
+    console.log("some error occured, check connection to db");
+    res.send("some error occured, check connection to db");
+    process.exit(0);
+  }
   gfs.find().toArray((err, files) => {
     // check if files
     if (!files || files.length === 0) {
@@ -73,12 +78,16 @@ app.get("/", (req, res) => {
             file.isImage = false;
           }
           return file;
-        }).sort((a, b) => {
-          return new Date(b["uploadDate"]).getTime() - new Date(a["uploadDate"]).getTime()
+        })
+        .sort((a, b) => {
+          return (
+            new Date(b["uploadDate"]).getTime() -
+            new Date(a["uploadDate"]).getTime()
+          );
         });
 
       return res.render("index", {
-        files : f
+        files: f
       });
     }
 
