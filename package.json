@@ -19,6 +19,6 @@
     "multer-gridfs-storage": "4.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.3"
   }
 }
