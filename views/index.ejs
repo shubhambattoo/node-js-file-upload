@@ -34,7 +34,7 @@
 						<% if (file.isImage) { %>
 					<img src="image/<%= file.filename %>" width="250" alt="" class="img-responsive">
 						<%} else { %>
-						<p><% file.filename %></p>
+						<a href="image/<%= file.filename %>" download><%= file.filename %></a>
 						<% } %>
 					</div>
 					<div class="card-footer">
