@@ -10,7 +10,7 @@
   "private": true,
   "keywords": [],
   "author": "shubhambattoo",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
