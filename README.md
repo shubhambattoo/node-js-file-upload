@@ -36,6 +36,11 @@ Serve the project
 npm start
 ```
 
-Server starts on the port 5001
+Server starts on the port [http://localhost:5001](http://localhost:5001)
+
+### You can follow the following tutorial which describes how all the code works on this repo
+[https://dev.to/shubhambattoo/uploading-files-to-mongodb-with-gridfs-and-multer-using-nodejs-5aed](https://dev.to/shubhambattoo/uploading-files-to-mongodb-with-gridfs-and-multer-using-nodejs-5aed)
+
+
 
 Give a ⭐️ if this project helped you!
