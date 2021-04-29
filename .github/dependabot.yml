@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mongoose
+    versions:
+    - 5.11.12
+    - 5.11.14
+    - 5.11.18
